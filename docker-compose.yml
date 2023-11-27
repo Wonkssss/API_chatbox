@@ -1,0 +1,7 @@
+services: 
+  api:
+    build: .
+    ports:
+      - "5502:5502" #5501:5501 is read as a string so it works as well as "5501:5501"
+    volumes:
+      - ./db:/database
